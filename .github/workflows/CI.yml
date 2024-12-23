@@ -1,0 +1,20 @@
+on:
+  push:
+    branches:
+    - develop
+    - master
+  pull_request:
+    branches:
+    - develop
+    - master
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    name: Build and Test
+    steps:
+      - uses: actions/checkout@v4
+      - uses: mlugg/setup-zig@v1.2.1
+        with:
+          version: 0.13.0
+      - run: zig build test
