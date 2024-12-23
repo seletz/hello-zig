@@ -14,6 +14,11 @@ jobs:
     name: Build and Test
     steps:
       - uses: actions/checkout@v4
+      - name: prepare
+        run:  |
+          sudo apt-get update
+          sudo apt-get install libgl1-mesa-dev libegl1-mesa-dev mesa-common-dev xorg-dev libasound-dev
+          cmake --version
       - uses: mlugg/setup-zig@v1.2.1
         with:
           version: 0.13.0
