@@ -1,0 +1,24 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "zig build",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "build-test",
+            "type": "shell",
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            },
+            "command": "zig test --test-no-exec -femit-bin=zig-out/bin/${fileBasenameNoExtension}-test ${file}"
+        }
+    ]
+}
