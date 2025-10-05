@@ -20,17 +20,8 @@ Some experiments in [zig](https://ziglang.org).  The main goal here is to get so
 
 ## Dependencies
 
-### VSCode
-
 >[!Note]
-> I use `vscodium` and I'm a complete NOOB wrt VSCode.
-
-I use these extensions:
-
-- [Zig Language](https://open-vsx.org/vscode/item?itemName=ziglang.vscode-zig), which installs `zig` and `zls` (zig language server)
-- The debugger task uses [CodeLLDB](https://open-vsx.org/vscode/item?itemName=vadimcn.vscode-lldb)
-- [Shader language support](https://open-vsx.org/vscode/item?itemName=slevesque.shader)
-- [GLSL Lint](https://open-vsx.org/vscode/item?itemName=dtoplak.vscode-glsllint) *could not get this running*
+> I ude the `ZigBrains` plugin in IntelliJ.
 
 ### sokol
 
